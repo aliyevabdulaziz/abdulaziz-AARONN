@@ -222,6 +222,10 @@ header {
 	display: inline-block;
 }
 
+.no-scroll {
+	overflow: hidden;
+}
+
 .project-btn::after {
 	contain: '';
 	background-image: url(img/icon.svg);
