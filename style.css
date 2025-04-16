@@ -411,6 +411,7 @@ header {
 	margin-bottom: 60px;
 }
 .orvillebury__span {
+	color: var(--white-color);
 	font-family: Inter;
 	display: inline-block;
 	font-weight: 700;
@@ -418,6 +419,7 @@ header {
 	margin: 32px 0 20px 0;
 }
 .orvillebury__text {
+color: var(--white-color);
 	font-family: Inter;
 	font-weight: 700;
 	font-size: 2.4em;
