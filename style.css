@@ -488,6 +488,11 @@ header {
 	font-weight: 700;
 	font-size: 32px;
 	color: var(--text-color);
+	transition: all .4s ease;
+}
+
+.mission__item a:hover{
+	color: var(--white-color);
 }
 
 .touch {
