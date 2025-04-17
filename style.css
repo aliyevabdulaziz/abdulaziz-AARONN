@@ -74,7 +74,7 @@ body {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1185px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
@@ -127,6 +127,8 @@ header {
   color: var(--white-color);
   cursor: pointer;
   transition: all 0.4s ease;
+	text-transform: uppercase;
+	text-wrap: nowrap;
 }
 
 .btn:hover {
@@ -151,7 +153,10 @@ header {
 }
 
 
-
+.active{
+	background-color: transparent;
+	color: var(--btn-border);
+}
 
 .adaptive {
   padding: 190px 0 230px;
@@ -241,6 +246,8 @@ border-radius: 30px;
 	gap: 10px;
 	max-width: 190px;
 	margin: 0 auto;
+	color:var(--white-color);
+	text-wrap: nowrap;
 }
 
 .project__list {
@@ -424,6 +431,10 @@ border-radius: 30px;
 	text-align: center;
 }
 
+.orvillebury__container{
+	max-width: 1165px;
+}
+
 .orvillebury__list {
 	display: flex;
 	align-items: center;
@@ -436,7 +447,7 @@ border-radius: 30px;
 	transform: scale(1.2);
 }
 .orvillebury__item {
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 .orvillebury__span {
 	color: var(--white-color);
@@ -514,11 +525,12 @@ color: var(--white-color);
 }
 
 .mission__item a {
-	font-family: Inter;
 	font-weight: 700;
 	font-size: 32px;
 	color: var(--text-color);
 	transition: all .4s ease;
+	text-transform: uppercase;
+	letter-spacing: 4px;
 }
 
 .mission__item a:hover{
@@ -554,6 +566,7 @@ input {
 	outline: none;
 	border-bottom: 2px solid var(--text-color);
 	color: var(--white-color);
+	font-size: 2.4em;
 }
 
 .form__btn {
@@ -561,6 +574,7 @@ input {
 	max-width: 160px;
 	margin-top: 18px;
 	text-transform: uppercase;
+	font-size: 2em;
 }
 
 .content__list {
@@ -1043,7 +1057,7 @@ input {
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 640px) {
 	header {
 		padding: 30px 0;
 	}
@@ -1051,6 +1065,7 @@ input {
 	.header__list {
 		display: none;
 		flex-direction: column;
+		justify-content: start;
 		position: absolute;
 		top: 80px;
 		right: 20px;
@@ -1058,8 +1073,8 @@ input {
 		padding: 20px;
 		border-radius: 10px;
 		box-shadow: 0 0 10px rgba(0,0,0,0.1);
-		z-index: 100;
-		gap: 15px;
+		z-index: 1;
+		gap: 30px;
 	}
 
 	.header__list.active {
@@ -1174,6 +1189,10 @@ input {
 		margin-bottom: 50px;
 	}
 
+	.footer__item{
+		text-align: center;
+	}
+
 	.work {
 		text-align: left;
 		padding: 60px 0 0 0;
@@ -1257,11 +1276,16 @@ input {
 
 }
 
+.mission__list {
+	flex-direction: column;
+	gap: 10px;
+}
 
 
 input {
 	padding: 30px 0;
 	outline: none;
+	font-size: 1.8em;
 }
 
 
@@ -1289,5 +1313,43 @@ input {
     margin: 50px auto 0;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+#nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  background-color: #111; /* menyu foni */
+  opacity: 0;
+  pointer-events: none;
+  transition: all ease 1s;
+  z-index: 2;
+  transform: translateX(100%);
+}
+
+#nav-menu.active {
+  opacity: 10;
+  pointer-events: auto;
+  transform: translateX(0);
+	z-index: 4;
+}
+
+.overlay.active {
+  opacity: 0.6;
+  pointer-events: auto;
+}
 
 }

@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AARONN</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <div class="container header__container">
+        <div class="container header__container" data-aos="zoom-in-down">
             <a href="/"  class="header__link">
                 <img src="img/Brand-logo.webp" alt="logo" width="125" height="28">
             </a>
+            <div class="overlay"></div>
             <ul class="header__list" id="nav-menu">
                 <li class="header__item">
                     <a href="/">home</a>
@@ -36,7 +38,7 @@
 
 <main>
   <section class="work">
-            <div class="container ">
+            <div class="container " data-aos="fade-down">
                 <div class="work__container">
                   <h1 class="work__title">Project Detail</h1>
                 <p class="work__text">Details About The Porject</p>
@@ -47,31 +49,31 @@
 
         <section class="detail">
           <div class="container">
-            <div class="project-img">
+            <div class="project-img" data-aos="fade-down">
               <img src="img/hand.webp" alt="image">
             </div>
-            <div class="detail__content">
+            <div class="detail__content" data-aos="fade-up">
               <h2 class="detail__title">Project Story</h2>
               <p class="detail__text">The fact that photography has different meanings to different people is one of the many components of its appeal. Photography is such an important part of our life that it is now very difficult to imagine the world without it. </p>
               <p class="detail__text">We cannot imagine a wedding without the opportunity to capture it on film, we would not be able to remember the growing up of children or the holidays if we did not have pictures.</p>
             </div>
             <div class="etail-imgs">
               <div class="project-img">
-                <img src="img/hand-silver.webp" alt="image" width="100%" >
+                <img src="img/hand-silver.webp" alt="image" width="100%"  data-aos="fade-right">
               </div>
               <div class="project-img">
-                <img src="img/matritsa.webp" alt="image" width="100%" >
+                <img src="img/matritsa.webp" alt="image" width="100%"  data-aos="fade-left">
               </div>
             </div>
-            <div class="detail__content">
+            <div class="detail__content" data-aos="fade-up">
               <h2 class="detail__title">Project Story</h2>
               <p class="detail__text">The fact that photography has different meanings to different people is one of the many components of its appeal. Photography is such an important part of our life that it is now very difficult to imagine the world without it. </p>
               <p class="detail__text">We cannot imagine a wedding without the opportunity to capture it on film, we would not be able to remember the growing up of children or the holidays if we did not have pictures.</p>
             </div>
-            <h2 class="detail__title-2">Other Projects</h2>
+            <h2 class="detail__title-2" data-aos="fade-down">Other Projects</h2>
             <ul class="detail__list">
               <a href="project.html">
-                <li class="detail__item">
+                <li class="detail__item" data-aos="fade-right">
                 <div class="project-img">
                   <img src="img/smoob.webp" alt="image">
                 </div>
@@ -80,7 +82,7 @@
               </li>
               </a>
               <a href="project.html">
-                <li class="detail__item">
+                <li class="detail__item" data-aos="fade-down">
                 <div class="project-img">
                   <img src="img/skled.webp" alt="image">
                 </div>
@@ -89,7 +91,7 @@
               </li>
               </a>
               <a href="project.html">
-                <li class="detail__item">
+                <li class="detail__item" data-aos="fade-left">
                 <div class="project-img">
                   <img src="img/haykal.webp" alt="image">
                 </div>
@@ -106,34 +108,44 @@
 
 
       <footer class="footer">
-      <div class="container ">
-        <h3 class="footer__title">Get in Touch With Us</h3>
-        <a href="https://info@aaronn.com" class="footer__link">info@aaronn.com</a>
+			<div class="container" data-aos="zoom-in-down">
+				<h3 class="footer__title">Get in Touch With Us</h3>
+				<a href="https://info@aaronn.com" class="footer__link">info@aaronn.com</a>
 
-        <div class="footer__container">
-          <ul class="footer__list">
-          <li class="footer__item"><a href="/"><img src="img/Brand-logo.webp" alt="logo"></a></li>
-          <li class="footer__item">
-            <a href="https://www.google.com/maps?q=Street+Avenue+21,+CA" target="_blank" class="footer__item-text">Street Avenue 21, CA</a>
-            <a href="tel:0-8-00-888-000">0-8-00-888-000</a>
-          </li>
-          <li class="footer__item">
-            <a href="tel:+9 0283353" >+9 0283353</a> <br>
-            <a href="https://t.me/ALIYEV_DEV" target="_blank"><img src="img/Vector.svg" alt="facebook"></a>
-            <a href="https://t.me/ALIYEV_DEV" target="_blank"><img src="img/Vector-1.svg" alt="twitter"></a>
-            <a href="https://www.instagram.com/aliyev.______1/" target="_blank"><img src="img/Vector-2.svg" alt="instagram"></a>
-          </li>
-        </ul>
-        </div>
-      </div>
-      <div class="container">
-        <p class="footer__text">© 2023. Ideapeel. All rights reserved. </p>
-      </div>
-    </footer>
+				<div class="footer__container">
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="/"><img src="img/Brand-logo.webp" alt="logo" /></a>
+						</li>
+						<li class="footer__item">
+							<a href="https://www.google.com/maps?q=Street+Avenue+21,+CA" target="_blank" class="footer__item-text"
+								>Street Avenue 21, CA</a
+							>
+							<a href="tel:0-8-00-888-000">0-8-00-888-000</a>
+						</li>
+						<li class="footer__item">
+							<a href="tel:+9 0283353">+9 0283353</a> <br />
+							<a href="https://t.me/ALIYEV_DEV" target="_blank"><img src="img/Vector.svg" alt="facebook" /></a>
+							<a href="https://t.me/ALIYEV_DEV" target="_blank"><img src="img/Vector-1.svg" alt="twitter" /></a>
+							<a href="https://www.instagram.com/aliyev.______1/" target="_blank"
+								><img src="img/Vector-2.svg" alt="instagram"
+							/></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container">
+				<p class="footer__text">© 2023. Ideapeel. All rights reserved.</p>
+			</div>
+		</footer>
 
 
 
 
         <script src="main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+  AOS.init();
+</script>
 </body>
 </html>

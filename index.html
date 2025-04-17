@@ -4,15 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>AARONN</title>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<header class="header">
-			<div class="container header__container">
+			<div class="container header__container" data-aos="zoom-in-down">
 				<a href="/" class="header__link">
 					<img src="img/Brand-logo.webp" alt="logo" width="125" height="28" />
 				</a>
-
+        <div class="overlay"></div>
           <ul class="header__list" id="nav-menu">
 					<li class="header__item">
 						<a href="/">home</a>
@@ -39,7 +40,7 @@
 
 		<main>
 			<section class="adaptive">
-				<div class="container">
+				<div class="container" data-aos="zoom-in-down">
 					<h1 class="adaptive__title">Adaptive Logo Design for Your Brand</h1>
 					<button class="btn adaptive__btn">Explore works <img src="img/icon.svg" alt="icon"></button>
 				</div>
@@ -47,7 +48,7 @@
 
 			<section class="closer">
 				<div class="container closer__container">
-					<div class="closer__content">
+					<div class="closer__content" data-aos="zoom-out-right">
 						<h2 class="closer__title">Let’s get know about me closer</h2>
 						<p class="closer__text">
 							Aaronn is a New York-based visual designer focusing on branding and visual identity. Her portfolio showcases her
@@ -55,7 +56,7 @@
 						</p>
 						<a href="about-me.html" class="btn">Discover More About Me</a>
 					</div>
-					<div class="closer-img">
+					<div class="closer-img" data-aos="zoom-out-left">
 						<img src="img/man.webp" alt="man" />
 						<div class="box"></div>
 						<div class="box-1"></div>
@@ -65,10 +66,10 @@
 
 			<section class="project">
 				<div class="container">
-					<h2 class="project__ttile">My Projects Highlight</h2>
-					<a class="btn project-btn" href="/project.html">Explore More <img src="img/icon.svg" alt="icon"></a>
+					<h2 class="project__ttile"  data-aos="zoom-out">My Projects Highlight</h2>
+					<a class="btn project-btn active" href="/project.html">Explore More <img src="img/icon.svg" alt="icon"  data-aos="zoom-out"></a>
 					<ul class="project__list">
-						<li class="project__item">
+						<li class="project__item" data-aos="zoom-in-left">
 							<a href="project.html">
 								<div class="project-img">
 									<img src="img/Img.webp" alt="image" width="560" />
@@ -80,7 +81,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="project__item">
+						<li class="project__item" data-aos="zoom-in-right">
 							<a href="project.html">
 								<div class="project-img">
 									<img src="img/Img-1.webp" alt="" width="560" />
@@ -92,7 +93,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="project__item">
+						<li class="project__item" data-aos="zoom-in-left">
 							<a href="project.html">
 								<div class="project-img">
 									<img src="img/Img-3.png" alt="" width="560" />
@@ -104,7 +105,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="project__item">
+						<li class="project__item" data-aos="zoom-in-right">
 							<a href="project.html">
 								<div class="project-img">
 									<img src="img/Img-4.webp" alt="" width="560" />
@@ -122,7 +123,7 @@
 
 			<section class="testimonial">
 				<div class="container testimonial__container">
-					<div class="testimonial__content">
+					<div class="testimonial__content"  data-aos="zoom-out-down">
 						<h2 class="testimonial__title">Testimonial</h2>
 						<p class="testimonial__text">
 							“Aaronn was fantastic to work with from start to finish. We were looking for a simple, stand-out logo and he
@@ -138,7 +139,7 @@
 		</main>
 
 		<footer class="footer">
-			<div class="container">
+			<div class="container" data-aos="zoom-in-down">
 				<h3 class="footer__title">Get in Touch With Us</h3>
 				<a href="https://info@aaronn.com" class="footer__link">info@aaronn.com</a>
 
@@ -170,5 +171,9 @@
 		</footer>
 
 		<script src="main.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+  AOS.init();
+</script>
 	</body>
 </html>
