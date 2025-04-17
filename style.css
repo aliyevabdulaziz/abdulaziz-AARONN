@@ -143,6 +143,8 @@ header {
   display: none;
 }
 
+
+
 .adaptive {
   padding: 190px 0 230px;
   text-align: center;
@@ -344,6 +346,11 @@ header {
 .footer__item {
   max-width: 260px;
   width: 100%;
+	text-align: left;
+}
+
+.footer__item:last-child{
+	text-align: right;
 }
 
 .footer__item-text {
@@ -1043,6 +1050,7 @@ input {
     border:none;
   }
 
+
 	.btn {
 		padding: 13px 15px;
 	}
@@ -1149,7 +1157,13 @@ input {
 	.work__title {
 		font-size: 4.2em;
 	}
+	.footer__item{
+						text-align: center;
+	}
 
+	.footer__item:last-child{
+				text-align: center;
+	}
 
 
   .orvillebury {
