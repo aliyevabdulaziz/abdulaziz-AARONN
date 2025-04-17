@@ -200,7 +200,6 @@ header {
 
 .no-scroll {
 	overflow: hidden;
-	background-color:var(--text-color);
 }
 
 .box-1 {
