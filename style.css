@@ -198,6 +198,11 @@ header {
   left: -40px;
 }
 
+.no-scroll {
+	overflow: hidden;
+	background-color:var(--text-color);
+}
+
 .box-1 {
   position: absolute;
   height: 55px;
