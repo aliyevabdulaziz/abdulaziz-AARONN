@@ -230,6 +230,10 @@ header {
   flex-wrap: wrap;
 }
 
+.project__list a:hover img{
+	transform: scale(1.2);
+}
+
 .project__item {
   text-align: left;
   margin-bottom: 74px;
@@ -396,6 +400,11 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
+}
+
+
+.orvillebury__list a:hover img{
+	transform: scale(1.2);
 }
 .orvillebury__item {
 	margin-bottom: 60px;
