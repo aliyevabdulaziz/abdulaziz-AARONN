@@ -97,6 +97,12 @@ header {
   width: 100%;
   font-size: 1.4em;
 }
+.adaptive__btn{
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	gap: 10px;
+}
 
 .header__item {
   padding-bottom: 10px;
@@ -226,11 +232,15 @@ header {
 }
 
 .project-btn {
-  margin-bottom: 80px;
-  display: inline-block;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	max-width: 190px;
+	margin: 0 auto;
 }
 
 .project__list {
+	margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -538,6 +548,7 @@ input {
 }
 
 .form__btn {
+	font-weight: 500;
 	max-width: 160px;
 	margin-top: 18px;
 	text-transform: uppercase;
