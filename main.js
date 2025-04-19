@@ -1,5 +1,5 @@
 const hamburger = document.querySelector('.hamburger-btn');
-const navMenu = document.getElementById('nav-menu');
+const navMenu = document.querySelector('.list-media');
 const elBody = document.querySelector('body');
 const overlay = document.querySelector('.overlay');
 
