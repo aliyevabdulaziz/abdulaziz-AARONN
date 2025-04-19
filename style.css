@@ -417,7 +417,14 @@ border-radius: 30px;
   margin-top: 36px;
 }
 
-
+.media-btn{
+	border:none;
+	background-color:transparent;
+}
+.media-item{
+	text-align: right;
+	width: 100%;
+}
 .work {
 	text-align: left;
 	padding: 130px 0 0 0;
