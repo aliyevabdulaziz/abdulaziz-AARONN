@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AARONN</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css" />
+     <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+
+    <!-- lightgallery plugins -->
+    <link type="text/css" rel="stylesheet" href="css/lg-zoom.css" />
+    <link type="text/css" rel="stylesheet" href="css/lg-thumbnail.css" />
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -71,12 +77,15 @@
               <h2 class="mission__title" data-aos="flip-left">My mission is to make design easier.</h2>
               <p class="mission__text" data-aos="flip-right">Create custom Designs with AARONN that converts more visitors than any website. With lots of unique design, you can easily select a logo without hassle. Create custom landing logos with AARONN that converts more visitors than any website. With lots of revisions, you can easily build a logo without porbolem.</p>
             </div>
-            <div class="closer-img mission-img">
-                    <img class="mission__img mission__img-1" src="img/boy-2.webp" alt="man"  height="500" data-aos="fade-down-right">
-                    <img class="mission__img mission__img-2" src="img/boy.webp" alt="boy"  height="500" data-aos="fade-down-left">
-                    <div class="box-2"></div>
-                    <div class="box-3"></div>
-                </div>
+            <div class="closer-img mission-img" id="static-thumbnails">
+    <a href="img/boy-2.webp">
+        <img src="img/boy-2.webp" />
+    </a>
+    <a href="img/boy.webp">
+        <img src="img/boy.webp" />
+    </a><div class="box-2"></div>
+    <div class="box-3"></div>
+</div>
                 <h2 class="mission__title-2">Follow me on:</h2>
                 <ul class="mission__list"  data-aos="flip-down">
                   <li class="mission__item"><a href="https://Dribble.com"  target="_blank">Dribble</a></li>
@@ -128,5 +137,11 @@
         <script>
   AOS.init();
 </script>
+
+ <script src="js/lightgallery.min.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="js/plugins/lg-thumbnail.umd.js"></script>
+    <script src="js/plugins/lg-zoom.umd.js"></script>
 </body>
 </html>

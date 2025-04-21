@@ -22,3 +22,11 @@ item.addEventListener(('click'), function(){
     overlay.classList.remove('active');
 	elBody.classList.remove('no-scroll');
 })
+
+
+lightGallery(document.getElementById('static-thumbnails'), {
+	animateThumb: false,
+	zoomFromOrigin: false,
+	allowMediaOverlap: true,
+	toggleThumb: true,
+});

@@ -1365,52 +1365,43 @@ input {
     margin: 50px auto 0;
 }
 
-.verlay {
+.overlay {
   position: fixed;
   top: 0;
-  bottom: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   background-color: #111;
-	color: red;
-	z-index: 111;
-  opacity: 90%;
-  /* pointer-events: none; */
-  /* transition: opacity 0.3s ease; */
+  opacity: 0;
+  pointer-events: none;
+  z-index: 111;
+  transition: opacity .5s ease;
 }
 
+.overlay.active {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+/* Menyu */
 #nav-menu {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 0; /* chap tomondan */
   height: 100vh;
   width: 300px;
-  background-color: #111; /* menyu foni */
+  background-color: #111;
   opacity: 0;
   pointer-events: none;
-  transform: translateX(100%);
+  transform: translateX(-100%); /* chapga yashiringan */
+  transition: opacity 0.5s ease, transform .5s ease;
+  z-index: 1111;
 }
 
 #nav-menu.active {
-  opacity: 10;
+  opacity: 1;
   pointer-events: auto;
-  transform: translateX(0);
-	z-index:1111;
+  transform: translateX(0); /* ko‘rinadi */
 }
-
-.overlay.active{
-	background-color: #111;
-	  position: fixed;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #111;
-	color: red;
-	z-index: 111;
-  opacity: 90%;
-}
-
-
 
 }
