@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AARONN</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
@@ -76,13 +77,15 @@
               <p class="detail__text">The fact that photography has different meanings to different people is one of the many components of its appeal. Photography is such an important part of our life that it is now very difficult to imagine the world without it. </p>
               <p class="detail__text">We cannot imagine a wedding without the opportunity to capture it on film, we would not be able to remember the growing up of children or the holidays if we did not have pictures.</p>
             </div>
-            <div class="etail-imgs">
-              <div class="project-img">
-                <img src="img/hand-silver.webp" alt="image" width="100%"  data-aos="fade-right">
-              </div>
-              <div class="project-img">
-                <img src="img/matritsa.webp" alt="image" width="100%"  data-aos="fade-left">
-              </div>
+            <div class="detail-imgs">
+               <div id="lightgallery">
+    <a href="img/hand-silver.webp">
+      <img src="img/hand-silver.webp" />
+    </a>
+    <a href="img/matritsa.webp">
+      <img src="img/matritsa.webp" />
+    </a>
+  </div>
             </div>
             <div class="detail__content" data-aos="fade-up">
               <h2 class="detail__title">Project Story</h2>
@@ -166,5 +169,16 @@
         <script>
   AOS.init();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+
+  <!-- lightGallery ishga tushirish -->
+  <script>
+    lightGallery(document.getElementById('lightgallery'), {
+      plugins: [lgThumbnail, lgZoom],
+      speed: 500
+    });
+    </script>
 </body>
 </html>
