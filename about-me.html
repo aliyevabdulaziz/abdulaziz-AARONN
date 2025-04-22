@@ -1,52 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AARONN</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-     <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css" />
-     <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
-
-    <!-- lightgallery plugins -->
-    <link type="text/css" rel="stylesheet" href="css/lg-zoom.css" />
-    <link type="text/css" rel="stylesheet" href="css/lg-thumbnail.css" />
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container header__container" data-aos="zoom-in-down">
-            <a href="/" class="header__link">
-                <img src="img/Brand-logo.webp" alt="logo" width="125" height="28">
-            </a>
-            <ul class="header__list" id="nav-menu">
-                <li class="header__item">
-                    <a href="/">home</a>
-                </li>
-                <li class="header__item">
-                    <a href='/about-me.html'>about me</a>
-                </li>
-                <li class="header__item">
-                    <a href='/my-work.html'>my work</a>
-                </li>
-                <li class="header__item">
-                    <a class='btn header__btn' href='/content.html'>Connect</a>
-                </li>
-            </ul>
-            <button class="hamburger-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-  <path d="M3 6h18M3 12h18M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round"/>
-</svg>
-</button>
-        </div>
-    </header>
-<div class="overlay"></div>
-		<div>
-			  <ul class="list-media"  id="nav-menu">
-					<li class="header__item media-item">
-						<button class="media-btn"><img src="img/close.svg" alt="close"></button>
-						<li class="header__item">
-						<a href="/"><img src="img/Brand-logo.webp" alt="logo"></a>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AARONN</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
+        <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__container" data-aos="zoom-in-down">
+				<a href="/" class="header__link">
+					<img src="img/Brand-logo.webp" alt="logo" width="125" height="28" />
+				</a>
+				<ul class="header__list" id="nav-menu">
 					<li class="header__item">
 						<a href="/">home</a>
 					</li>
@@ -60,46 +27,79 @@
 						<a class="btn header__btn" href="/content.html">Connect</a>
 					</li>
 				</ul>
+				<button class="hamburger-btn">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+						<path d="M3 6h18M3 12h18M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round" />
+					</svg>
+				</button>
+			</div>
+		</header>
+		<div class="overlay"></div>
+		<div>
+			<ul class="list-media" id="nav-menu">
+				<li class="header__item media-item">
+					<button class="media-btn"><img src="img/close.svg" alt="close" /></button>
+				</li>
+
+				<li class="header__item">
+					<a href="/"><img src="img/Brand-logo.webp" alt="logo" /></a>
+				</li>
+
+				<li class="header__item">
+					<a href="/">home</a>
+				</li>
+				<li class="header__item">
+					<a href="/about-me.html">about me</a>
+				</li>
+				<li class="header__item">
+					<a href="/my-work.html">my work</a>
+				</li>
+				<li class="header__item">
+					<a class="btn header__btn" href="/content.html">Connect</a>
+				</li>
+			</ul>
 		</div>
-<main>
-  <section class="work">
-            <div class="container " data-aos="fade-down">
-                <div class="work__container">
-                  <h1 class="work__title">About Me</h1>
-                <p class="work__text">Little Brief About Myself</p>
-                </div>
-            </div>
-        </section>
+		<main>
+			<section class="work">
+				<div class="container" data-aos="fade-down">
+					<div class="work__container">
+						<h1 class="work__title">About Me</h1>
+						<p class="work__text">Little Brief About Myself</p>
+					</div>
+				</div>
+			</section>
 
-        <section class="mission">
-          <div class="container">
-            <div class="mission__content">
-              <h2 class="mission__title" data-aos="flip-left">My mission is to make design easier.</h2>
-              <p class="mission__text" data-aos="flip-right">Create custom Designs with AARONN that converts more visitors than any website. With lots of unique design, you can easily select a logo without hassle. Create custom landing logos with AARONN that converts more visitors than any website. With lots of revisions, you can easily build a logo without porbolem.</p>
-            </div>
-            <div class="closer-img mission-img" id="static-thumbnails">
-    <a href="img/boy-2.webp">
-        <img src="img/boy-2.webp" />
+			<section class="mission">
+				<div class="container">
+					<div class="mission__content">
+						<h2 class="mission__title" data-aos="flip-left">My mission is to make design easier.</h2>
+						<p class="mission__text" data-aos="flip-right">
+							Create custom Designs with AARONN that converts more visitors than any website. With lots of unique design, you can
+							easily select a logo without hassle. Create custom landing logos with AARONN that converts more visitors than any
+							website. With lots of revisions, you can easily build a logo without porbolem.
+						</p>
+					</div>
+					 <div  class="closer-img mission-img" id="lightgallery">
+    <a href="img/boy-2.webp" class="closer___link">
+      <img src="img/boy-2.webp" height="500"/>
     </a>
-    <a href="img/boy.webp">
-        <img src="img/boy.webp" />
-    </a><div class="box-2"></div>
-    <div class="box-3"></div>
-</div>
-                <h2 class="mission__title-2">Follow me on:</h2>
-                <ul class="mission__list"  data-aos="flip-down">
-                  <li class="mission__item"><a href="https://Dribble.com"  target="_blank">Dribble</a></li>
-                  <li class="mission__item"><a href="https://Twitter.com"  target="_blank">Twitter</a></li>
-                  <li class="mission__item"><a href="https://Facebook.com " target="_blank">Facebook</a></li>
-                  <li class="mission__item"><a href="https://Instagram.com/aliyev.______1" target="_blank">Instagram</a></li>
-                </ul>
-          </div>
-        </section>
+    <a href="img/boy.webp" class="closer___link">
+      <img src="img/boy.webp" height="500"/>
+    </a>
 
-</main>
+  </div>
+					<h2 class="mission__title-2">Follow me on:</h2>
+					<ul class="mission__list" data-aos="flip-down">
+						<li class="mission__item"><a href="https://Dribble.com" target="_blank">Dribble</a></li>
+						<li class="mission__item"><a href="https://Twitter.com" target="_blank">Twitter</a></li>
+						<li class="mission__item"><a href="https://Facebook.com " target="_blank">Facebook</a></li>
+						<li class="mission__item"><a href="https://Instagram.com/aliyev.______1" target="_blank">Instagram</a></li>
+					</ul>
+				</div>
+			</section>
+		</main>
 
-
-    <footer class="footer">
+		<footer class="footer">
 			<div class="container" data-aos="zoom-in-down">
 				<h3 class="footer__title">Get in Touch With Us</h3>
 				<a href="https://info@aaronn.com" class="footer__link">info@aaronn.com</a>
@@ -131,17 +131,17 @@
 			</div>
 		</footer>
 
+		<script src="main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
 
-        <script src="main.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-  AOS.init();
-</script>
-
- <script src="js/lightgallery.min.js"></script>
-
-    <!-- lightgallery plugins -->
-    <script src="js/plugins/lg-thumbnail.umd.js"></script>
-    <script src="js/plugins/lg-zoom.umd.js"></script>
-</body>
+  <!-- lightGallery ishga tushirish -->
+  <script>
+    lightGallery(document.getElementById('lightgallery'), {
+      plugins: [lgThumbnail, lgZoom],
+      speed: 500
+    });
+  </script>
+	</body>
 </html>
